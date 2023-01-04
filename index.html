@@ -1,0 +1,81 @@
+ <head>
+   <title>FANAI</title>
+   <link rel="shortcut icon" href="apple.PNG" type="image/x-icon">
+   <meta charset="utf-8">
+
+   <style>
+     body{
+       margin:0;
+
+       background-image: url('back.png');
+       background-repeat: no-repeat;
+       background-size: cover;
+     }
+     a {
+       color:white;
+       text-decoration: none;
+     }
+     h1 {
+       font-size: 40px;
+       text-align: center;
+       border-bottom:1px solid gray;
+       margin:0;
+       pddding:20px;
+     }
+     ol{
+       border-right:1px solid gray;
+       width:130px;
+       margin:0;
+       padding:20px;
+     }
+
+
+
+
+  </style>
+
+
+ </head>
+ <body>
+<p style="background-image: url('background.jpg');">
+
+
+ <h1><a href="index.html">Find All New Apple Information</a></h1>
+
+
+
+ <input id="night_day" type="button" value="night" onclick="
+ var target = document.querySelector('body');
+ if(this.value === 'night'){
+   target.style.backgroundColor = 'black';
+   target.style.color = 'white';
+   this.value = 'day';
+
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+     while(i < alist.length){
+     alist[i].style.color = 'powderblue';
+     i = i + 1;
+     }
+
+ } else{
+   target.style.backgroundColor = 'white';
+   target.style.color = 'black';
+   this.value = 'night';
+
+   var alist = document.querySelectorAll('a');
+   var i = 0;
+    while(i < alist.length){
+    alist[i].style.color = 'blue';
+    i = i + 1;
+    }
+
+ }
+">
+
+<ol>
+  <li> <a href="1.html"><font color="white">Product</font></a></li>
+  <li> <a href="2.html"><font color="white">How to solve</font></a></li>
+  <li> <a href="3.html"><font color="white">about</font></a></li>
+</ol>
