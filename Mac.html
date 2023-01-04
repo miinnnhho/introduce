@@ -1,0 +1,126 @@
+<head>
+  <title>FANAI-Mac</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body{
+      margin:0;
+
+      background-image: url('back.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    a {
+      color:white;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      pddding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:130px;
+      margin:0;
+      padding:20px;
+    }
+    </style>
+
+  <script>
+    function nightdayhandler(self){
+
+      var target = document.querySelector('body');
+      if(self.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        self.value = 'day';
+
+
+         var alist = document.querySelectorAll('a');
+         var i = 0;
+          while(i < alist.length){
+          alist[i].style.color = 'powderblue';
+          i = i + 1;
+          }
+
+      } else{
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        self.value = 'night';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+         while(i < alist.length){
+         alist[i].style.color = 'blue';
+         i = i + 1;
+         }
+      }
+    }
+  </script>
+</head>
+<body>
+  <p style="background-image: url('back.png');">
+
+<h1><a href="index.html">Find All New Apple Information</a></h1>
+
+<input id="night_day" type="button" value="night" onclick="
+  nightdayhandler(this);
+ ">
+
+<div id="grid">
+  <ol>
+    <li> <a href="1.html">Product</a></li>
+        <ul>
+          <li>
+              <a href= "Mac.html" style="text-decoration:underline">Mac</a>
+          </li>
+       </ul>
+       <ul>
+          <li>
+            <a href="iPhone.html">Phone</a>
+          </li>
+       </ul>
+       <ul>
+          <li>
+            <a href="iPad.html">iPad</a></li>
+       </ul>
+       <ul>
+          <li>
+            <a href="Watch.html">Watch</a></li>
+       </ul>
+       <ul>
+          <li>
+            <a href="AirPods.html">AirPods</a></li>
+       </ul>
+    <li> <a href="2.html">interests</a></li>
+    <li> <a href="3.html">This year's goal</a></li>
+  </ol>
+
+  <div id="article">
+       <h2><a href="https://www.apple.com/kr/mac/"
+       target="_blank" title="introduce about Mac">Mac</a></h2>
+       <h3>MacBook Air</h3>
+       <p>The M2 chip starts the next generation of Apple silicon,
+          with even more of the speed and power efficiency of M1.
+          So you can get more done faster with a more powerful 8‑core CPU.
+          Create captivating images and animations with up to a 10-core GPU.
+          Work with more streams of 4K and 8K ProRes video with the high‑performance media engine.
+          And keep working — or playing — all day and into the night with up to 18 hours of battery life.</p>
+       <img src="air.png" width="400 ">
+
+       <h3>MacBook Pro</h3>
+      <p>The most powerful MacBook Pro ever is here.
+        With the blazing-fast M1 Pro or M1 Max chip
+        — the first Apple silicon designed for pros —
+        you get groundbreaking performance and amazing battery life.
+        Add to that a stunning Liquid Retina XDR display,
+        the best camera and audio ever in a Mac laptop, and all the ports you need.
+        The first notebook of its kind, this MacBook Pro is a beast.</p>
+      <img src="pro.png" width="400 ">
+     </div>
+
+  </div>
